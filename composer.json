@@ -1,0 +1,39 @@
+{
+    "name": "batoi/modal",
+    "description": "modals for Batoi",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Batoi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.2.5",
+        "laravel/framework": "7.*",
+        "gajus/dindent": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5.",
+        "orchestra/testbench": "5.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ignasi Gomis",
+            "email": "igomis@cipfpbatoi.es"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Batoi\\ModalServiceProvider"
+            ]
+        }
+    }
+}
